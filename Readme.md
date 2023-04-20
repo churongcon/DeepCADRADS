@@ -117,7 +117,7 @@ In the `config.py` file you can find all the paths and parameters you can change
   - `main.py`: script to train the model on the whole train set with the best parameters found in the previous step.
   
     Model's checkpoints will be saved in the folder `checkpoints`. 
-    You can visualize the learning curves with wandb while training.
+    You can visualize the learning curves with [wandb](https://wandb.ai/site) while training.
   
 - **_04_Test**
   - `test.py`: script to test the model on the test set and visually inspect the results. 
