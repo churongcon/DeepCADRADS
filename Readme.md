@@ -49,6 +49,53 @@ Where **uniq_ID** is the patient ID; **multi_Class** is the original CAD-RADS cl
 **multi_Class_3** is the multi-class classification label we used for our experiments (0: CR0, 1: CR1-2-3, 2: CR4-5);
 **img_LCX**,**img_LAD**,**img_RCA** are the numbers of each artery projections for the patient.
 
+This is the tree structure of the folders you should have to directly use our code:
+``` 
+├── _00_Preprocessing
+│   ├── preprocess.py
+├── _01_SplitDataset
+│   ├── split_dataset.py
+│   ├── BinaryClass
+│   │   ├── train
+│   │   └── test 
+│   └── MultiClass
+│       ├── train
+│       └── test   
+├── _02_SyntheticData
+│   ├── fill_dataset.py
+│   ├── synthetic_data.py
+│   ├── BinaryClass
+│   │   ├── train
+│   │   └── test 
+│   └── MultiClass
+│       ├── train
+│       └── test  
+├── _03_Train
+│   ├── main.py
+│   ├── main_cv.py
+│   ├── train.py
+│   ├── CAD_Dataset.py
+│   └── LoadData.py
+├── _04_Test
+│   ├── test.py
+│   └── support_functions.py
+├── Data
+│   ├── Original
+│   │   ├── Img
+│   │   │   ├── CR0_pt.00_LAD_se000.png
+│   │   │   ├── CR0_pt.00_LAD_se001.png
+│   │   │   ├── ...
+│   │   └── csv
+│   │       └── CADRADS.csv
+│   ├── Preprocessed
+│   │   └── Img
+│   └── FullData
+│       ├── train
+│       └── test  
+├── checkpoints
+└── results
+``` 
+
 ### Reproducing the experiments 
 Since our pipeline is designed to be as flexible as possible, we provide a set of progressively numbered folders containing the scripts for each step. 
 According to your needs, you can choose to run all the steps or jump to the one you are interested in.
