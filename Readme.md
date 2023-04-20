@@ -125,7 +125,10 @@ In the `config.py` file you can find all the paths and parameters you can change
   
 
 ### Results
-If you want to just download the model weights and run the inference on your dataset you can 
+
+If you want to download our model weights please compile [this form](
+https://docs.google.com/forms/d/e/1FAIpQLScDs_0egdPDwWVe4Ed17bbdsw57oBtukDz0oUJ91KEUBc3-1w/viewform?usp=pp_url
+).
 
 <p align="center">
 <img src="figures/results.png" width="auto" height="auto"/>
@@ -143,10 +146,6 @@ We compared the performance of different models including fully convolutional, a
 <img src="figures/comparison.png" width="auto" height="auto"/>
 </p>
 
-### Checkpoints
-If you want to directly use our model weights you can request them compiling [this form](
-https://docs.google.com/forms/d/e/1FAIpQLScDs_0egdPDwWVe4Ed17bbdsw57oBtukDz0oUJ91KEUBc3-1w/viewform?usp=pp_url
-).
 
 ## Citation
 If you find this work useful for your research, please cite our paper:
