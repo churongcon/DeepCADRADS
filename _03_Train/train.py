@@ -161,7 +161,7 @@ def training(device, project_name, exp_name, model_name, net, data_path, train_t
                 'optimizer_state_dict': optimizer.state_dict(),
                 'loss': loss_list,
                 'val_loss': val_loss_list,
-            }, config.checkpoints_path + '/' + exp_name + '.pt')  # check if right
+            }, config.checkpoints_path + '/' + exp_name + '.pt') 
 
             print('finished epoch: better model')
             best_val_acc = val_acc
